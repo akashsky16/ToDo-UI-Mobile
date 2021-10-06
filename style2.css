@@ -1,0 +1,120 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
+  }
+  
+  
+  .bgimg {
+    background-image: url("./images/img1.PNG");
+    filter: blur(8px);
+    /* -webkit-filter: blur(8px); */
+    margin: auto;
+    margin-top: 50px;
+    height: 80%; 
+    width: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .text {
+    background-color: white;
+    color: red;
+    font-weight: bold;
+    border: 1px solid red;
+    box-shadow: grey 5px 5px 10px;
+    border-radius: 15px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* z-index: 2; */
+    width: 30%;
+    height: 180px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .list{
+      font-size: 25px;
+  }
+
+  input{
+      border: 1px red solid;
+      border-radius: 10px;
+      width: 300px;
+      height: 30px;
+  }
+
+  .add{
+      border: 1px red solid;
+      border-radius: 25px;
+      color: white;
+      background-color: red;
+      margin-top: 15px;
+      width: 100px;
+      font-size: larger;
+      padding: 10px;
+  }
+
+  /* Media query for Moto G4 */
+
+  @media screen and (min-width: 360px) and (max-width: 640px)
+  {
+    .bgimg{
+      background-image: url(./images/img3.PNG);
+      filter: blur(6px);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .text{
+      border-radius: 8px;
+      height: 150px;
+      width: 70%;
+    }
+
+    .list{
+      font-size: 18px;
+    }
+
+    input{
+      width: 80%;
+    }
+
+    .add{
+      font-size: 18px;
+    }
+  }
+
+  /* Media Query for Ipad */
+
+@media screen and (min-width: 768px) and (max-width: 1024px)
+{
+  .bgimg{
+    background-image: url(./images/img3.PNG);
+    filter: blur(6px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .text{
+    border-radius: 8px;
+    height: 150px;
+    width: 70%;
+  }
+
+  .list{
+    font-size: 18px;
+  }
+
+  input{
+    width: 80%;
+  }
+
+  .add{
+    font-size: 18px;
+  }
+}
+

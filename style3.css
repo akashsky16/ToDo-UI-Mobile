@@ -1,0 +1,161 @@
+.head {
+    display: flex;
+    flex-direction: row;
+    color: black;
+    font-family: arial;
+    font-size: 48px;
+    font-weight: bolder;
+}
+  
+.head:before{
+    content: "";
+    border-bottom: 2px solid rgb(185, 176, 176);
+    margin: auto;
+    margin-right: 30px;
+    width: 20%;
+}
+.head:after {
+    content: "";
+    border-bottom: 2px solid rgb(185, 176, 176);
+    margin: auto;
+    margin-left: 30px;
+    width: 20%;
+}
+
+.arrow{
+    text-decoration: none;
+}
+
+.bi-arrow-left-circle-fill{
+    margin-left: 575px;
+    margin-top: 30px;
+    margin-right: 15px;
+    fill: red;
+}
+
+.back{
+    font-family: arial;
+    font-size: 46px;
+    color: grey;
+}
+
+.block{
+    border: 1px red solid;
+    border-radius: 15px;
+    box-shadow: grey 5px 5px 10px;
+    position: relative;
+    display: inline-block;
+    width: 20%;
+    height: 350px;
+    margin-left: 470px;
+    margin-top: 60px;
+    text-align: left;
+    padding-left: 120px;
+    color: rgb(245, 41, 41);
+    font-family: arial;
+    font-size: 25px;
+    padding-top: 20px;
+}
+
+.completed{
+    color: red;
+    text-decoration: line-through;
+    margin-top: 30px;
+}
+input{
+    margin-left: -40px;
+    color: black;
+    border: 1px grey solid;
+    width: 40px;
+    height: 20px;
+}
+
+.pending{
+    color: black;
+}
+
+.plus{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.bi-plus-circle-fill{
+
+    fill: red;
+}
+
+/* Media Query for Moto G4 */
+
+@media screen and (min-width: 360px) and (max-width: 640px)
+{
+    .head{
+        font-size: 32px;
+        margin-left: 2.8em;
+    }
+    .head:after{
+        display: none;
+    }
+
+    .head:before{
+        display: none;
+    }
+
+    .back{
+        display: none;
+    }
+
+    .bi-arrow-left-circle-fill{
+        margin-left: 0em;
+        margin-top: 0em;
+        position: absolute;
+        left: 3em;
+        top: 0.8em;
+        height: 28px;
+        width: 28px;
+    }
+    .block{
+        margin-left: 20px;
+        font-size: 18px;
+        padding-left: 90px;
+        width: 60%;
+    }
+}
+
+/* Media Query for Ipad */
+
+@media screen and (min-width: 768px) and (max-width: 1024px)
+{
+    .head{
+        font-size: 48px;
+        margin-left: 6em;
+    }
+    .head:after{
+        display: none;
+    }
+
+    .head:before{
+        display: none;
+    } 
+
+    .back{
+        display: none;
+    }
+
+    .bi-arrow-left-circle-fill{
+        margin-left: 0em;
+        margin-top: 0em;
+        position: absolute;
+        left: 14em;
+        top: 1.2em;
+        height: 36px;
+        width: 36px;
+    }
+
+    .block{
+        margin-left: 11em;
+        font-size: 18px;
+        padding-left: 90px;
+        width: 40%;
+    }
+}

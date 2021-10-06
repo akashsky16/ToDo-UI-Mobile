@@ -1,0 +1,180 @@
+.container{
+    margin: auto;
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 200px;
+}
+
+.cont{
+    margin-left: 50px;
+    display: inline;
+}
+
+.cont1{
+    display: inline;
+    margin-left: 250px;
+}
+
+form{
+    display: inline;
+}
+
+.plus{
+    
+    text-decoration: none;
+}
+
+.bi-plus-circle-fill{
+    margin-right: 10px;
+    fill: red;
+}
+
+.task{
+    font-family: arial;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.list{
+    font-family: arial;
+    font-size: 50px;
+    color: grey;
+}
+
+.list1{
+    font-family: arial;
+    font-size: 42px;
+    color: grey;
+
+}
+
+.block{
+    
+    border: 1px red solid;
+    border-radius: 15px;
+    /* box-shadow: 1px 1px gray; */
+    box-shadow: grey 5px 5px 10px;
+    display: inline-block;
+    width: 12%;
+    height: 300px;
+    margin: 50px;
+    margin-left: -30px;
+    margin-top: 30px;
+    text-align: left;
+    padding-left: 30px;
+    color: rgb(247, 28, 28);
+    font-family: arial;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: red;
+}
+
+.completed{
+    color: red;
+    text-decoration: line-through;
+    font-size: 18px;
+    margin-top: 30px;
+}
+input{
+    margin-left: -20px;
+    color: black;
+}
+
+.pending{
+    color: black;
+}
+
+/* Media Query for Moto G4 */
+
+@media screen and (min-width: 360px) and (max-width: 640px)
+{
+    .container{
+        margin-top: -1px;
+    }
+    .cont{
+        margin-left: -12em;
+    }
+    .task{
+        font-size: 48px;
+    }
+
+    .list{
+        font-size: 48px;
+    }
+
+    .plus{
+        margin-left: -13em;
+    }
+
+    .bi-plus-circle-fill{
+        height: 36px;
+        width: 36px;
+    }
+
+    .list1 , .completed, .checkbox, .pending, input, hr{
+        display: none;
+    }
+
+    .block{
+        border: 1px rgb(247, 115, 115) solid;
+        border-radius: 5px;
+        display: block;
+        text-align: left;
+        padding-bottom: 20px;
+        margin-left: -12em;
+        width: 300px;
+        height: 5px;
+        font-size: 16px;
+        color: grey;
+    }
+
+    a{
+        color: gray;
+    }
+
+}
+
+/* Media Query for ipad */
+
+@media screen and (min-width: 768px) and (max-width: 1024px)
+{
+    .container{
+        margin-top: -1px;
+        padding-top: 1em;
+    }
+    .cont{
+        margin-left: -3em;
+    }
+
+    .task, .list{
+        font-size: 42px;
+    }
+
+    .list1 , .completed, .checkbox, .pending, input, hr{
+        display: none;
+    }
+
+    .plus{
+        margin-left: -3em;
+    }
+
+    .block{
+        border: 1px rgb(247, 115, 115) solid;
+        border-radius: 5px;
+        display: block;
+        text-align: left;
+        padding-bottom: 20px;
+        margin-left: -7em;
+        width: 100%;
+        height: 5px;
+        font-size: 16px;
+        color: grey;
+    }
+    a{
+        color: gray;
+    }
+}
